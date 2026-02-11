@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Clock, Wrench } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Index = () => {
   return (
@@ -10,12 +11,11 @@ const Index = () => {
 
       <div className="relative z-10 max-w-2xl w-full text-center space-y-8">
         {/* Logo / Brand */}
-        <div className="space-y-2">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
-            Agence Universelle
-          </h1>
-          <div className="w-16 h-1 bg-accent mx-auto rounded-full" />
+        {/* Logo */}
+        <div className="flex justify-center">
+          <img src={logo} alt="Agence Universelle" className="h-16 md:h-20 w-auto" />
         </div>
+        <div className="w-16 h-1 bg-accent mx-auto rounded-full" />
 
         {/* Maintenance Icon */}
         <div className="flex justify-center">
